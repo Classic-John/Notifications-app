@@ -1,0 +1,18 @@
+<div class="announcement-container">
+  <p class="categoryId">{{ categoryId }} </p>
+  <p class="message">{{ message }}</p>
+  <p class="title">{{ title }}</p>
+  <p class="author">{{ author }}</p>
+  <p class="imageURL" alt="nu merge">{{ imageURL }} </p>
+  <div>
+    <button
+      [routerLink]="'/edit'" 
+      mat-raised-button color="primary"
+      (click)="editAnnouncement()">
+      Edit
+    </button>
+    <button mat-raised-button [routerLink]="''" color="accent" (click)="deleteAnnouncement()">
+      Delete
+    </button>
+  </div>
+</div>
